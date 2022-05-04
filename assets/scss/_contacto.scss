@@ -1,0 +1,27 @@
+.contacto{
+    width: 300px;
+    height: 400px;
+    background-image: url(../Multimedia/Img/FondoContacto.png);
+    background-size: 100%;
+    border-radius: 10px;
+    border: ridge 2px gray;
+    padding: 50px;
+    margin: 10px;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 50px;    
+}
+.contacto__titulo{
+    text-decoration: underline;
+    text-align: center;
+}
+.ubicacion{
+    text-align: center;
+    line-height: 1.6;
+}
+.ubicacion__texto{
+    text-decoration: underline;
+}

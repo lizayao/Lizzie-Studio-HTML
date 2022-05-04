@@ -1,1 +1,104 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Arapey";
+  src: url(../Tipografia/Arapey-Regular.ttf);
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Arapey";
+}
+
+.contacto {
+  width: 300px;
+  height: 400px;
+  background-image: url(../Multimedia/Img/FondoContacto.png);
+  background-size: 100%;
+  border-radius: 10px;
+  border: ridge 2px gray;
+  padding: 50px;
+  margin: 10px;
+  line-height: 1.6;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.contacto__titulo {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.ubicacion {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.ubicacion__texto {
+  text-decoration: underline;
+}
+
+.portada {
+  grid-area: portada;
+  display: block;
+  text-align: center;
+}
+
+.servicios {
+  text-align: center;
+}
+
+.servicio {
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+}
+
+.servicio:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.servicio__titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.servicio__imagen {
+  border: 10px double white;
+}
+
+.contenido {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.5;
+  width: 60%;
+  margin: auto;
+}
+
+#redSocial {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+#redSocial:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#Pie {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  height: 150px;
+}
+
+.Pie__texto {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  padding-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */

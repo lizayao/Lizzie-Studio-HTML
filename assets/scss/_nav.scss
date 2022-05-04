@@ -1,0 +1,44 @@
+menu{
+    grid-area: nav;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+}
+.logo img{
+    /*width: 140px;*/
+    width: 25%;
+}
+ul{
+    list-style: none;
+    font-size: 0;
+    background-color: white;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+ul ul { 
+    display: none;
+    position: absolute;
+}
+ul ul li {
+    display: block;
+    padding: 0;
+    top: 5px;
+}
+ul li:hover ul {
+    display: block;
+    padding: 0px !important;
+    margin: 0px !important;
+}
