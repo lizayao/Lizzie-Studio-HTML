@@ -1,20 +1,44 @@
-menu{
-    grid-area: nav;
-    position: sticky;
-    top: 0px;
+.logo img{
+    width: 30%;
+}
+nav{
     background-color: white;
-    background-size: cover;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    text-align: start;
+    position: sticky; /*No esta aplicando la propiedad*/
+    top: 20px;
+    ul{
+        list-style: none;
+        font-size: 0;
+        background-color: white;
+        position: relative;
+        li{
+            display: inline-block;
+            width: 180px;
+            font-size: 20px;
+            line-height: 1.5;
+            a{
+                text-decoration: none;
+                color: goldenrod;
+            }
+        }
+        ul{
+            display: none;
+            position: absolute;
+            li:hover{
+                display: block;
+                padding: 10px;
+                margin: 0;
+                background-color: white;
+            }
+        }
+    }
 }
-.logo img{
-    /*width: 140px;*/
-    width: 25%;
-}
+
+/*
 ul{
     list-style: none;
     font-size: 0;
@@ -28,6 +52,10 @@ li{
     font-size: 20px;
     line-height: 1.5;
 }
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
 ul ul { 
     display: none;
     position: absolute;
@@ -39,6 +67,6 @@ ul ul li {
 }
 ul li:hover ul {
     display: block;
-    padding: 0px !important;
+    padding: 10px !important;
     margin: 0px !important;
-}
+}*/

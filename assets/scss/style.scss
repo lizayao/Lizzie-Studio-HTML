@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 @font-face{
     font-family: "Arapey";
     src: url(../Tipografia/Arapey-Regular.ttf)
@@ -6,12 +10,27 @@ body{
     background-color:antiquewhite;
     font-family:"Arapey";
 }
+
+@import "_nav";
+@import "_servicios";
 @import "_contacto";
 
+.presentacion{
+    border: 3px white;
+    border-style: solid;
+    margin: 40px 40px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.653), rgba(218, 165, 32, 0.4));
+    p{
+        font-size: 16px;
+        font-style: italic;
+    }
+}
 .portada{
     grid-area: portada;
     display: block;
     text-align: center;
+    height: 60%;
+    margin-top: 20px;
 }
 .servicios{
     text-align: center;
@@ -51,10 +70,11 @@ body{
     background-color:black;
     color:white;
     height: 150px;
-}
-.Pie__texto{
-    text-align:center;
-    font-size: 16px;
-    font-style: italic;
-    padding-top: 50px;
+    margin-top: 20px;
+        .Pie__texto{
+            text-align:center;
+            font-size: 16px;
+            font-style: italic;
+            padding-top: 50px;
+        }
 }

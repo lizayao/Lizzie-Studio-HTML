@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Arapey";
   src: url(../Tipografia/Arapey-Regular.ttf);
@@ -8,26 +13,108 @@ body {
   font-family: "Arapey";
 }
 
-.contacto {
-  width: 300px;
-  height: 400px;
-  background-image: url(../Multimedia/Img/FondoContacto.png);
-  background-size: 100%;
-  border-radius: 10px;
-  border: ridge 2px gray;
-  padding: 50px;
-  margin: 10px;
-  line-height: 1.6;
-  font-weight: bold;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+.logo img {
+  width: 30%;
 }
 
-.contacto__titulo {
-  text-decoration: underline;
-  text-align: center;
+nav {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  /*No esta aplicando la propiedad*/
+  top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 180px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+nav ul ul li:hover {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  background-color: white;
+}
+
+/*
+ul{
+    list-style: none;
+    font-size: 0;
+    background-color: white;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+ul ul { 
+    display: none;
+    position: absolute;
+}
+ul ul li {
+    display: block;
+    padding: 0;
+    top: 5px;
+}
+ul li:hover ul {
+    display: block;
+    padding: 10px !important;
+    margin: 0px !important;
+}*/
+.contacto {
+  width: 500px;
+  height: 680px;
+  background-image: url(../Multimedia/Img/FondoContacto.png);
+  background-size: cover;
+  border-radius: 10px;
+  border: ridge 2px gray;
+  padding: 40px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 .ubicacion {
@@ -35,14 +122,34 @@ body {
   line-height: 1.6;
 }
 
-.ubicacion__texto {
+.ubicacion .ubicacion__texto {
   text-decoration: underline;
+}
+
+.ubicacion .mapa:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.presentacion {
+  border: 3px white;
+  border-style: solid;
+  margin: 40px 40px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.653)), to(rgba(218, 165, 32, 0.4)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.653), rgba(218, 165, 32, 0.4));
+}
+
+.presentacion p {
+  font-size: 16px;
+  font-style: italic;
 }
 
 .portada {
   grid-area: portada;
   display: block;
   text-align: center;
+  height: 60%;
+  margin-top: 20px;
 }
 
 .servicios {
@@ -93,9 +200,10 @@ body {
   background-color: black;
   color: white;
   height: 150px;
+  margin-top: 20px;
 }
 
-.Pie__texto {
+#Pie .Pie__texto {
   text-align: center;
   font-size: 16px;
   font-style: italic;
