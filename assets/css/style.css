@@ -105,7 +105,7 @@ ul li:hover ul {
 }*/
 .contacto {
   width: 500px;
-  height: 680px;
+  height: 700px;
   background-image: url(../Multimedia/Img/FondoContacto.png);
   background-size: cover;
   border-radius: 10px;
@@ -196,7 +196,6 @@ ul li:hover ul {
 }
 
 #Pie {
-  grid-area: footer;
   background-color: black;
   color: white;
   height: 150px;
@@ -208,5 +207,9 @@ ul li:hover ul {
   font-size: 16px;
   font-style: italic;
   padding-top: 50px;
+}
+
+#Pie a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

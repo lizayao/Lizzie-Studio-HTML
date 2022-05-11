@@ -66,15 +66,17 @@ body{
     }
 }
 #Pie{
-    grid-area: footer;
     background-color:black;
     color:white;
     height: 150px;
     margin-top: 20px;
-        .Pie__texto{
-            text-align:center;
-            font-size: 16px;
-            font-style: italic;
-            padding-top: 50px;
-        }
+    .Pie__texto{
+        text-align:center;
+        font-size: 16px;
+        font-style: italic;
+        padding-top: 50px;
+    }
+    a{
+        color: white;
+    }
 }
