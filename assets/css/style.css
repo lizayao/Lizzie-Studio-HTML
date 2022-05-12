@@ -13,6 +13,12 @@ body {
   font-family: "Arapey";
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  /*No me aplica la propiedad*/
+}
+
 .logo img {
   width: 30%;
 }
@@ -34,9 +40,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
-  /*No esta aplicando la propiedad*/
   top: 20px;
 }
 
@@ -71,38 +74,6 @@ nav ul ul li:hover {
   background-color: white;
 }
 
-/*
-ul{
-    list-style: none;
-    font-size: 0;
-    background-color: white;
-    text-decoration: none;
-}
-li{
-    display: inline-block;
-    position: relative;
-    width: 180px;
-    font-size: 20px;
-    line-height: 1.5;
-}
-a{
-    text-decoration: none;
-    color: goldenrod;
-}
-ul ul { 
-    display: none;
-    position: absolute;
-}
-ul ul li {
-    display: block;
-    padding: 0;
-    top: 5px;
-}
-ul li:hover ul {
-    display: block;
-    padding: 10px !important;
-    margin: 0px !important;
-}*/
 .contacto {
   width: 500px;
   height: 700px;
@@ -131,6 +102,73 @@ ul li:hover ul {
           transform: scale(1.1);
 }
 
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 140px auto auto 150px;
+      grid-template-rows: 140px auto auto 150px;
+      grid-template-areas: "nav nav nav nav" "portada portada portada portada" "categorias producto producto publicidad" "footer footer footer footer";
+}
+
+.categorias {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: categorias;
+}
+
+.producto {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: producto;
+  width: 350px;
+  height: 480px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.producto .producto__nombre {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.producto .producto__descripcion {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.producto .producto__precio {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.publicidad {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: publicidad;
+}
+
+.boton, .botonServicios {
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.botonServicios:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
 .presentacion {
   border: 3px white;
   border-style: solid;
@@ -145,6 +183,9 @@ ul li:hover ul {
 }
 
 .portada {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-area: portada;
   display: block;
   text-align: center;
@@ -156,23 +197,23 @@ ul li:hover ul {
   text-align: center;
 }
 
-.servicio {
+.servicios .servicio {
   display: inline-block;
   text-align: center;
   margin: 50px;
 }
 
-.servicio:hover {
+.servicios .servicio:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.servicio__titulo {
+.servicios .servicio .servicio__titulo {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.servicio__imagen {
+.servicios .servicio .servicio__imagen {
   border: 10px double white;
 }
 

@@ -12,8 +12,10 @@ body{
 }
 
 @import "_nav";
-@import "_servicios";
 @import "_contacto";
+@import "_productos";
+@import "_botones";
+@import "_mixins";
 
 .presentacion{
     border: 3px white;
@@ -34,21 +36,21 @@ body{
 }
 .servicios{
     text-align: center;
-}
-.servicio{
-    display: inline-block;
-    text-align: center;
-    margin: 50px;
-    &:hover{
-        transform: scale(1.1);
+    .servicio{
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .servicio__titulo{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .servicio__imagen{
+            border: 10px double white
+        }
     }
-}
-.servicio__titulo{
-    text-align: center;
-    margin-bottom: 20px;
-}
-.servicio__imagen{
-    border: 10px double white
 }
 .contenido{
     font-size: 20px;

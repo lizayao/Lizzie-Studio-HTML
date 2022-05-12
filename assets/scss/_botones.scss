@@ -1,0 +1,11 @@
+.boton{
+    color: white;
+    background-color: goldenrod;
+    @include bordesRedondeados;
+}
+.botonServicios{
+    @extend .boton;
+    &:hover{
+        transform: rotate(5deg);
+    }
+}
