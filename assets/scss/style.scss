@@ -69,7 +69,7 @@ body{
 }
 #Pie{
     background-color:black;
-    color:white;
+    color: map-get($colorBlanco, color);
     height: 150px;
     margin-top: 20px;
     .Pie__texto{
@@ -79,6 +79,6 @@ body{
         padding-top: 50px;
     }
     a{
-        color: white;
+        color:  map-get($colorBlanco, color);
     }
 }

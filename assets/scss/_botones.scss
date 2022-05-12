@@ -1,5 +1,5 @@
 .boton{
-    color: white;
+    color: map-get($colorBlanco, color);
     background-color: goldenrod;
     @include bordesRedondeados;
 }
