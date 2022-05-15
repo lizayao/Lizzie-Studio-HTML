@@ -17,6 +17,13 @@ body{
 @import "_botones";
 @import "_mixins";
 
+
+.carousel-inner img{
+    height: 50vh;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
 .presentacion{
     border: 3px white;
     border-style: solid;

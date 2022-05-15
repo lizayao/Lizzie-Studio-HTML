@@ -1,12 +1,12 @@
 .contenedor{
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 140px auto auto 150px;
-    grid-template-areas: "nav nav nav nav"
-                         "portada portada portada portada"
-                         "categorias producto producto publicidad"
-                         "footer footer footer footer"
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "nav nav"
+                         "portada portada"
+                         "producto publicidad"
+                         "footer footer"
 }
 .categorias{
     grid-area: categorias;
@@ -33,6 +33,9 @@
     .producto__precio{
     font-weight: bold;
     font-size: 20px;
+    }
+    img:hover{
+        transform: scale(1.1);
     }
 }
 .publicidad{
