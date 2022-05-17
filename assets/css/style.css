@@ -13,17 +13,23 @@ body {
   font-family: "Arapey";
 }
 
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  /*No me aplica la propiedad*/
-}
-
 .logo img {
   width: 30%;
 }
 
+header {
+  width: 100%;
+  height: 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,38 +46,40 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 20px;
+  z-index: 10;
+}
+
+nav li {
+  display: inline-block;
+  width: 180px;
+  position: relative;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+nav li a {
+  text-decoration: none;
+  color: goldenrod;
 }
 
 nav ul {
   list-style: none;
   font-size: 0;
   background-color: white;
-  position: relative;
-}
-
-nav ul li {
-  display: inline-block;
-  width: 180px;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: goldenrod;
 }
 
 nav ul ul {
-  display: none;
   position: absolute;
+  display: none;
 }
 
-nav ul ul li:hover {
+nav ul ul li {
   display: block;
-  padding: 10px;
-  margin: 0;
-  background-color: white;
+}
+
+nav ul ul li:hover ul {
+  display: block;
+  padding: 0px;
 }
 
 .contacto {
@@ -105,54 +113,58 @@ nav ul ul li:hover {
 .contenedor {
   display: -ms-grid;
   display: grid;
-  gap: 10px;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 140px auto auto 150px;
-      grid-template-rows: 140px auto auto 150px;
-      grid-template-areas: "nav nav nav nav" "portada portada portada portada" "categorias producto producto publicidad" "footer footer footer footer";
+  gap: 5px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "nav nav" "portada portada" "producto publicidad" "footer footer";
 }
 
 .categorias {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: categorias;
 }
 
-.producto {
+.tarjeta {
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
   grid-area: producto;
   width: 350px;
   height: 480px;
   background-color: white;
   border-radius: 10px;
+}
+
+.tarjeta .producto {
   padding: 15px;
   margin: 15px;
   text-align: center;
   line-height: 1.5;
-  display: inline-block;
 }
 
-.producto .producto__nombre {
+.tarjeta .producto .producto__nombre {
   text-decoration: underline;
   font-size: 20px;
 }
 
-.producto .producto__descripcion {
+.tarjeta .producto .producto__descripcion {
   font-style: italic;
   font-size: 16px;
 }
 
-.producto .producto__precio {
+.tarjeta .producto .producto__precio {
   font-weight: bold;
   font-size: 20px;
 }
 
+.tarjeta .producto img:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
 .publicidad {
   -ms-grid-row: 3;
-  -ms-grid-column: 4;
+  -ms-grid-column: 2;
   grid-area: publicidad;
 }
 
@@ -167,6 +179,13 @@ nav ul ul li:hover {
 .botonServicios:hover {
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
+}
+
+.carousel-inner img {
+  height: 50vh;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .presentacion {
@@ -185,7 +204,7 @@ nav ul ul li:hover {
 .portada {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 2;
   grid-area: portada;
   display: block;
   text-align: center;
@@ -237,6 +256,10 @@ nav ul ul li:hover {
 }
 
 #Pie {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
   background-color: black;
   color: white;
   height: 150px;

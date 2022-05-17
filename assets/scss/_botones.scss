@@ -1,5 +1,7 @@
+@import "_mixins";
+
 .boton{
-    color: map-get($colorBlanco, color);
+    color: white;
     background-color: goldenrod;
     @include bordesRedondeados;
 }

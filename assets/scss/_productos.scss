@@ -2,7 +2,7 @@
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "nav nav"
                          "portada portada"
                          "producto publicidad"
@@ -11,32 +11,33 @@
 .categorias{
     grid-area: categorias;
 }
-.producto{
+.tarjeta{
     grid-area: producto;
     width: 350px;
     height: 480px;
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    text-align: center;
-    line-height: 1.5;
-    display: inline-block;
-    .producto__nombre{
-    text-decoration: underline;
-    font-size: 20px;
-    }
-    .producto__descripcion{
-    font-style: italic;
-    font-size: 16px;
-    }
-    .producto__precio{
-    font-weight: bold;
-    font-size: 20px;
-    }
-    img:hover{
-        transform: scale(1.1);
-    }
+    .producto{        
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+        line-height: 1.5;
+        .producto__nombre{
+        text-decoration: underline;
+        font-size: 20px;
+        }
+        .producto__descripcion{
+        font-style: italic;
+        font-size: 16px;
+        }
+        .producto__precio{
+        font-weight: bold;
+        font-size: 20px;
+        }
+        img:hover{
+            transform: rotate(5deg);
+        }
+    }   
 }
 .publicidad{
     grid-area: publicidad;

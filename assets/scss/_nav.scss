@@ -8,6 +8,7 @@ header{
     top: 0;
 }
 nav{
+    grid-area: nav;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -36,11 +37,9 @@ nav{
             li{
                 display: block;
             }
-            li:hover{
+            li:hover ul{
                 display: block;
-                padding: 10px;
-                margin: 0;
-                background-color: white;
+                padding: 0px;
             }
         }
     }
