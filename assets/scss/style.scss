@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
 }
+@import "_nav";
+@import "_contacto";
+@import "_productos";
+@import "_botones";
+@import "_mixins";
+
 @font-face{
     font-family: "Arapey";
     src: url(../Tipografia/Arapey-Regular.ttf)
@@ -11,11 +17,7 @@ body{
     font-family:"Arapey";
 }
 
-@import "_nav";
-@import "_contacto";
-@import "_productos";
-@import "_botones";
-@import "_mixins";
+
 
 
 .carousel-inner img{
@@ -89,4 +91,14 @@ body{
     a{
         color: white;
     }
+}
+
+.portada img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.categorias{
+display: flex;
+justify-content: space-between;
 }

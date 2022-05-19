@@ -7,19 +7,15 @@
                          "portada portada"
                          "producto publicidad"
                          "footer footer"
-}
 .categorias{
     grid-area: categorias;
 }
 .tarjeta{
     grid-area: producto;
     width: 350px;
-    height: 480px;
     background-color: white;
     border-radius: 10px;
     .producto{        
-        padding: 15px;
-        margin: 15px;
         text-align: center;
         line-height: 1.5;
         .producto__nombre{
@@ -37,6 +33,9 @@
         img:hover{
             transform: rotate(5deg);
         }
+    img{
+        width: 100%;
+    }
     }   
 }
 .publicidad{

@@ -3,16 +3,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Arapey";
-  src: url(../Tipografia/Arapey-Regular.ttf);
-}
-
-body {
-  background-color: antiquewhite;
-  font-family: "Arapey";
-}
-
 .logo img {
   width: 30%;
 }
@@ -26,9 +16,6 @@ header {
 }
 
 nav {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: nav;
   background-color: white;
   display: -webkit-box;
@@ -110,34 +97,28 @@ nav ul ul li:hover ul {
           transform: scale(1.1);
 }
 
-.contenedor {
-  display: -ms-grid;
-  display: grid;
-  gap: 5px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "nav nav" "portada portada" "producto publicidad" "footer footer";
-}
-
+/*.contenedor{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav"
+                         "portada portada"
+                         "producto publicidad"
+                         "footer footer"
+}*/
 .categorias {
   grid-area: categorias;
 }
 
 .tarjeta {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: producto;
   width: 350px;
-  height: 480px;
   background-color: white;
   border-radius: 10px;
 }
 
 .tarjeta .producto {
-  padding: 15px;
-  margin: 15px;
   text-align: center;
   line-height: 1.5;
 }
@@ -162,9 +143,11 @@ nav ul ul li:hover ul {
           transform: rotate(5deg);
 }
 
+.tarjeta .producto img {
+  width: 100%;
+}
+
 .publicidad {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: publicidad;
 }
 
@@ -179,6 +162,16 @@ nav ul ul li:hover ul {
 .botonServicios:hover {
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
+}
+
+@font-face {
+  font-family: "Arapey";
+  src: url(../Tipografia/Arapey-Regular.ttf);
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Arapey";
 }
 
 .carousel-inner img {
@@ -202,9 +195,6 @@ nav ul ul li:hover ul {
 }
 
 .portada {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: portada;
   display: block;
   text-align: center;
@@ -256,9 +246,6 @@ nav ul ul li:hover ul {
 }
 
 #Pie {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: footer;
   background-color: black;
   color: white;
@@ -275,5 +262,21 @@ nav ul ul li:hover ul {
 
 #Pie a {
   color: white;
+}
+
+.portada img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.categorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
