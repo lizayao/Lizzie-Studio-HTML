@@ -6,9 +6,7 @@
     grid-template-areas: "nav nav"
                          "portada portada"
                          "producto publicidad"
-                         "footer footer"
-.categorias{
-    grid-area: categorias;
+                         "footer footer";
 }
 .tarjeta{
     grid-area: producto;
