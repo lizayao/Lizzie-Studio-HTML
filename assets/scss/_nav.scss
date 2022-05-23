@@ -1,11 +1,10 @@
 .logo img{
-    width: 30%;
+    width: 25%;
 }
 header{
-    width: 100%;
     position: sticky;
     top: 0;
-    z-index: 2000 !important;
+    z-index: 50;
 }
 nav{
     grid-area: nav;
@@ -13,9 +12,7 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    z-index: 50;
     li{
         display: inline-block;
         width: 180px;

@@ -4,7 +4,7 @@
 }
 
 .logo img {
-  width: 30%;
+  width: 25%;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2000 !important;
+  z-index: 50;
 }
 
 nav {
@@ -178,13 +178,12 @@ body {
   font-family: "Arapey";
 }
 
-.carousel-inner img {
-  height: 50vh;
-  margin: 0 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
+/*
+.carousel-inner img{
+    height: 50vh;
+    margin: 0 auto;
+    object-fit: cover;
+}*/
 .presentacion {
   border: 3px white;
   border-style: solid;
