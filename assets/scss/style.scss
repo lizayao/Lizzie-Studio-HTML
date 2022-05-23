@@ -17,8 +17,6 @@ body{
     font-family:"Arapey";
 }
 
-
-
 /*
 .carousel-inner img{
     height: 50vh;
@@ -68,16 +66,25 @@ body{
     width: 60%;
     margin: auto;
 }
+.portada img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.categorias{
+display: flex;
+justify-content: space-between;
+}
 #redSocial{
-    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+    position: sticky;
     bottom: 50px;
-    right: 50px;
-    &:hover{
-        transform: scale(1.1);
-    }
 }
 #Pie{
-    grid-area: footer;
+    grid-area: footer; /*Revisar esto*/
     background-color:black;
     color: white;
     height: 150px;
@@ -91,14 +98,4 @@ body{
     a{
         color: white;
     }
-}
-
-.portada img{
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-}
-.categorias{
-display: flex;
-justify-content: space-between;
 }

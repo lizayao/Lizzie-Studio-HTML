@@ -7,12 +7,13 @@ header{
     z-index: 50;
 }
 nav{
-    grid-area: nav;
+    grid-area: nav; /*Revisar esto*/
     background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     li{
         display: inline-block;
         width: 180px;
@@ -28,16 +29,7 @@ nav{
         list-style: none;
         font-size: 0;
         background-color: white;
-        ul{
-            position: absolute;
-            display: none;
-            li{
-                display: block;
-            }
-            li:hover ul{
-                display: block;
-                padding: 0px;
-            }
         }
     }
-}
+
+/*Probando Media Querie*/

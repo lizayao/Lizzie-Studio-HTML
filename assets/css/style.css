@@ -8,7 +8,6 @@
 }
 
 header {
-  width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -20,6 +19,7 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: nav;
+  /*Revisar esto*/
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,13 +30,12 @@ nav {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 50;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav li {
@@ -58,20 +57,7 @@ nav ul {
   background-color: white;
 }
 
-nav ul ul {
-  position: absolute;
-  display: none;
-}
-
-nav ul ul li {
-  display: block;
-}
-
-nav ul ul li:hover ul {
-  display: block;
-  padding: 0px;
-}
-
+/*Probando Media Querie*/
 .contacto {
   width: 500px;
   height: 700px;
@@ -240,15 +226,37 @@ body {
   margin: auto;
 }
 
-#redSocial {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
+.portada img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#redSocial:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.categorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#redSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 50px;
 }
 
 #Pie {
@@ -256,6 +264,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
+  /*Revisar esto*/
   background-color: black;
   color: white;
   height: 150px;
@@ -271,21 +280,5 @@ body {
 
 #Pie a {
   color: white;
-}
-
-.portada img {
-  height: 400px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.categorias {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
