@@ -11,7 +11,7 @@ nav{
     background-color: white;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-between;
     align-items: center;
     li{

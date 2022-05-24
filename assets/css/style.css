@@ -28,8 +28,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -169,6 +169,10 @@ body {
     height: 50vh;
     margin: 0 auto;
     object-fit: cover;
+}*/
+/*
+.contenedorPrincipal{
+
 }*/
 .presentacion {
   border: 3px white;
