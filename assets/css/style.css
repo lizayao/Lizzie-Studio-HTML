@@ -15,9 +15,6 @@ header {
 }
 
 nav {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: nav;
   /*Revisar esto*/
   background-color: white;
@@ -57,7 +54,16 @@ nav ul {
   background-color: white;
 }
 
-/*Probando Media Querie*/
+@media (max-width: 567px) {
+  .logo {
+    display: none;
+  }
+}
+
+/*
+.dropdown-item{
+    color: goldenrod;
+}*/
 .contacto {
   width: 500px;
   height: 700px;
@@ -86,22 +92,19 @@ nav ul {
           transform: scale(1.1);
 }
 
-.contenedor {
+.contenedorTarjetas {
   display: -ms-grid;
   display: grid;
-  gap: 5px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "nav nav" "portada portada" "producto publicidad" "footer footer";
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: "producto publicidad";
 }
 
 .tarjeta {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: producto;
-  width: 350px;
+  width: 300px;
   background-color: white;
   border-radius: 10px;
 }
@@ -109,6 +112,7 @@ nav ul {
 .tarjeta .producto {
   text-align: center;
   line-height: 1.5;
+  padding: 20px;
 }
 
 .tarjeta .producto .producto__nombre {
@@ -119,6 +123,7 @@ nav ul {
 .tarjeta .producto .producto__descripcion {
   font-style: italic;
   font-size: 16px;
+  padding-top: 10px;
 }
 
 .tarjeta .producto .producto__precio {
@@ -136,7 +141,7 @@ nav ul {
 }
 
 .publicidad {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: publicidad;
 }
@@ -166,10 +171,11 @@ body {
 
 /*
 .carousel-inner img{
-    height: 50vh;
+    height: 80vh;
     margin: 0 auto;
     object-fit: cover;
-}*/
+}
+*/
 /*
 .contenedorPrincipal{
 
@@ -187,15 +193,27 @@ body {
   font-style: italic;
 }
 
-.portada {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: portada;
-  display: block;
-  text-align: center;
-  height: 60%;
-  margin-top: 20px;
+/*
+.portada{
+    grid-area: portada;
+    display: block;
+    text-align: center;
+    height: 60%;
+    margin-top: 20px;
+}*/
+.contenedorServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (max-width: 567px) {
+  .contenedorServicios {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .servicios {
@@ -246,6 +264,13 @@ body {
           justify-content: space-between;
 }
 
+/*Revisar*/
+/*
+.contenedorServicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
 #redSocial {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,9 +289,6 @@ body {
 }
 
 #Pie {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: footer;
   /*Revisar esto*/
   background-color: black;

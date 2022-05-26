@@ -31,5 +31,12 @@ nav{
         background-color: white;
         }
     }
-
-/*Probando Media Querie*/
+@media (max-width:567px){
+    .logo{
+        display: none;
+    }
+}
+/*
+.dropdown-item{
+    color: goldenrod;
+}*/

@@ -1,32 +1,32 @@
-.contenedor{
+.contenedorTarjetas{
     display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nav nav"
-                         "portada portada"
-                         "producto publicidad"
-                         "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "producto publicidad";
 }
+//.categoriaProductos{
+
+//
 .tarjeta{
     grid-area: producto;
-    width: 350px;
+    width: 300px;
     background-color: white;
     border-radius: 10px;
     .producto{        
         text-align: center;
         line-height: 1.5;
+        padding: 20px;
         .producto__nombre{
-        text-decoration: underline;
-        font-size: 20px;
+            text-decoration: underline;
+            font-size: 20px;
         }
         .producto__descripcion{
-        font-style: italic;
-        font-size: 16px;
+            font-style: italic;
+            font-size: 16px;
+            padding-top: 10px;
         }
         .producto__precio{
-        font-weight: bold;
-        font-size: 20px;
+            font-weight: bold;
+            font-size: 20px;
         }
         img:hover{
             transform: rotate(5deg);

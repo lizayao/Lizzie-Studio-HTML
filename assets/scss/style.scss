@@ -3,6 +3,7 @@
     margin: 0;
 }
 @import "_nav";
+@import "_variables";
 @import "_contacto";
 @import "_productos";
 @import "_botones";
@@ -16,14 +17,13 @@ body{
     background-color:antiquewhite;
     font-family:"Arapey";
 }
-
 /*
 .carousel-inner img{
-    height: 50vh;
+    height: 80vh;
     margin: 0 auto;
     object-fit: cover;
-}*/
-
+}
+*/
 /*
 .contenedorPrincipal{
 
@@ -40,12 +40,23 @@ body{
         font-style: italic;
     }
 }
+/*
 .portada{
     grid-area: portada;
     display: block;
     text-align: center;
     height: 60%;
     margin-top: 20px;
+}*/
+.contenedorServicios{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (max-width:567px){
+    .contenedorServicios{
+        flex-wrap: wrap;
+
+    }
 }
 .servicios{
     text-align: center;
@@ -81,6 +92,12 @@ body{
 display: flex;
 justify-content: space-between;
 }
+/*Revisar*//*
+.contenedorServicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
 #redSocial{
     display: flex;
     flex-direction: row;
