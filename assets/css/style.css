@@ -54,7 +54,7 @@ nav ul {
   background-color: white;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 754px) {
   .logo {
     display: none;
   }
@@ -209,8 +209,12 @@ body {
       flex-wrap: nowrap;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 1000px) {
   .contenedorServicios {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

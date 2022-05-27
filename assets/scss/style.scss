@@ -52,8 +52,9 @@ body{
     display: flex;
     flex-wrap: nowrap;
 }
-@media (max-width:567px){
+@media (max-width:1000px){
     .contenedorServicios{
+        flex-direction: row;
         flex-wrap: wrap;
 
     }
