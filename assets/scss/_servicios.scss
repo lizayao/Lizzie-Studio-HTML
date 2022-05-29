@@ -1,0 +1,37 @@
+h4{
+    text-decoration: underline;
+}
+h6 a{
+    text-decoration: none;
+    color: rgb(193, 50, 128);
+}
+.mensajeCelu{
+    display: none;
+}
+.table{
+    margin: 25px;
+}
+.contenedorServicios{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (max-width:1000px){
+    .table{
+        display: none;
+    }
+    t{
+        display: none;
+    }
+    .mensajeCelu{
+        display:contents;
+        text-align: center;
+    }
+    .contenedorServicios{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cardServicios{
+        margin-top: 50px;
+    }
+}

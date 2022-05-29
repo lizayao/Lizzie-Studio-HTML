@@ -7,7 +7,6 @@ header{
     z-index: 50;
 }
 nav{
-    grid-area: nav; /*Revisar esto*/
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -31,12 +30,11 @@ nav{
         background-color: white;
         }
     }
-@media (max-width:754px){
+@media (max-width:820px){
     .logo{
         display: none;
     }
+    ul{
+        margin-top: 10px;
+    }
 }
-/*
-.dropdown-item{
-    color: goldenrod;
-}*/

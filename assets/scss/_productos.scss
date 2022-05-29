@@ -1,12 +1,19 @@
+/*
 .contenedorTarjetas{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "producto publicidad";
-}
+}*/
 //.categoriaProductos{
 
 //
+.productoCategoria{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+}
 .tarjeta{
+    margin-top: 20px;
     grid-area: producto;
     width: 300px;
     background-color: white;
@@ -16,7 +23,7 @@
         line-height: 1.5;
         padding: 20px;
         .producto__nombre{
-            text-decoration: underline;
+            font-weight: bold;
             font-size: 20px;
         }
         .producto__descripcion{
