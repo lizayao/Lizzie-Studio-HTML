@@ -1,5 +1,6 @@
 h4{
-    text-decoration: underline;
+    font-weight: bold;
+    padding-bottom: 8px;
 }
 h6 a{
     text-decoration: none;
@@ -9,14 +10,13 @@ h6 a{
     display: none;
 }
 .table{
-    margin: 25px;
+    margin: 20px;
 }
-.contenedorServicios{
-    display: flex;
-    flex-wrap: nowrap;
-}
+.contenedorServicios div{
+    display: inline-block;
 
-@media (max-width:1000px){
+}
+@media (max-width:1200px){
     .table{
         display: none;
     }
@@ -25,7 +25,6 @@ h6 a{
     }
     .mensajeCelu{
         display:contents;
-        text-align: center;
     }
     .contenedorServicios{
         flex-direction: row;

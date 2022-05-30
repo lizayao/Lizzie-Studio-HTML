@@ -32,13 +32,12 @@ body{
         font-style: italic;
     }
 }
-
 .serviciosInicio{
     text-align: center;
     .servicio{
         display: inline-block;
         text-align: center;
-        margin: 50px;
+        margin: 30px;
         &:hover{
             transform: scale(1.1);
         }
@@ -51,6 +50,7 @@ body{
         }
     }
 }
+/*Y esto?*/
 .contenido{
     font-size: 20px;
     font-style: italic;
@@ -62,15 +62,18 @@ body{
 display: flex;
 justify-content: space-between;
 }
+
 #redSocial{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 40px;
     position: sticky;
-    bottom: 50px;
+    bottom: 55px;
 }
-
+h1{
+    text-decoration: underline;
+}
 #Pie{
     background-color:black;
     color: white;
@@ -86,11 +89,15 @@ justify-content: space-between;
         color: white;
     }
 }
-@media (max-width:1000px){
+@media (max-width:768px){
     #redSocial{
         margin-right: 20px;
     }
     .Pie__texto{
         padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer div{
+        display: none;
     }
 }
